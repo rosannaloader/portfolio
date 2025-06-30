@@ -6,7 +6,6 @@ import s4 from '../../../assets/projects/stuff/s4.jpeg';
 import s5 from '../../../assets/projects/stuff/s5.jpeg';
 import s6 from '../../../assets/projects/stuff/s6.jpeg';
 
-import { useNavigate } from 'react-router-dom';
 
 function Stuff() {
     
