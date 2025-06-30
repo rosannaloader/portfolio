@@ -1,0 +1,56 @@
+.photo-grid {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.photo-container {
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.grid-photo {
+  will-change: transform;
+}
+
+.grid-photo:hover {
+  transform: scale(1.05);
+}
+
+/* Add a subtle loading animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.grid-photo {
+  animation: fadeIn 0.5s ease-in;
+}
+
+.masonry-grid {
+  width: 100%;
+  transition: column-count 0.3s ease;
+}
+
+.masonry-item {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.masonry-image {
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  will-change: transform;
+}
+
+.masonry-image:hover {
+  transform: scale(1.02);
+  cursor: pointer;
+} 
