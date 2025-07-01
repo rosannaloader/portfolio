@@ -23,7 +23,6 @@ const VideoGrid: React.FC<VideoGridProps> = ({
 }) => {
   const [columns, setColumns] = useState(3);
   const [selectedVideo, setSelectedVideo] = useState<Video | null>(null);
-  const navigate = useNavigate();
 
   useEffect(() => {
     const calculateColumns = () => {
