@@ -2,7 +2,7 @@ import PortfolioCard from './PortfolioCard';
 import stuff from '../assets/project_card/stuff.jpeg';
 import nnt from '../assets/project_card/nt_black.png';
 import devono from '../assets/project_card/devono.png';
-import ecn from '../assets/project_card/ecn.png';
+import ecn from '../assets/project_card/ecn.jpg';
 
 // Sample portfolio data - you can replace this with your actual data
 const portfolioItems = [
