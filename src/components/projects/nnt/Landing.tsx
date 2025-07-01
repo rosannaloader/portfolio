@@ -1,5 +1,6 @@
 import PortfolioCard from '../../PortfolioCard';
 import nnt7 from '../../../assets/projects/nnt/nnt7.jpeg';
+import nnt8 from '../../../assets/projects/nnt/nnt8.png';
 import { useNavigate } from 'react-router-dom';
 
 // Sample portfolio data - you can replace this with your actual data
@@ -11,17 +12,11 @@ const portfolioItems = [
         link: "/projects/nnt/main-social-content",
     },
     {
-        title: "Coming soon!",
+        title: "TikToks",
         description: "",
-        imageUrl: "",
-        link: ""
+        imageUrl: nnt8,
+        link: "/projects/nnt/tiktoks",
     },
-    {
-        title: "",
-        description: "",
-        imageUrl: "",
-        link: ""
-    }
     // Add more portfolio items here when you have real content and images
 ];
 

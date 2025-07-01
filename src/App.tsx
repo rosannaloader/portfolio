@@ -7,6 +7,7 @@ import Contact from './components/Contact'
 import Stuff from './components/projects/stuff/Stuff'
 import NNTLanding from './components/projects/nnt/Landing'
 import NNTMainSocialContent from './components/projects/nnt/MainSocialContent'
+import NNTTiktoks from './components/projects/nnt/Tiktoks'
 import ECN from './components/projects/ecn/ECN'
 import Devono from './components/projects/devono/Devono'
 
@@ -23,6 +24,7 @@ function App() {
         <Route path="/projects/devono" element={<Devono />} />
         <Route path="/projects/ecn" element={<ECN />} />
         <Route path="/projects/nnt/main-social-content" element={<NNTMainSocialContent />} />
+        <Route path="/projects/nnt/tiktoks" element={<NNTTiktoks />} />
       </Routes>
     </Router>
   )

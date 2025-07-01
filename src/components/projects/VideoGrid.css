@@ -1,0 +1,172 @@
+.video-grid {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.video-container {
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+}
+
+.grid-video {
+  will-change: transform;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.grid-video:hover {
+  transform: scale(1.05);
+}
+
+/* Add a subtle loading animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.grid-video {
+  animation: fadeIn 0.5s ease-in;
+}
+
+.masonry-grid {
+  width: 100%;
+  transition: column-count 0.3s ease;
+}
+
+.flex-grid {
+  width: 100%;
+  display: flex;
+  gap: 16px;
+  padding: 16px;
+  justify-content: center;
+}
+
+.masonry-item {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.flex-item {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  flex: 1;
+  max-width: calc(50% - 8px);
+  min-width: 250px;
+}
+
+.masonry-video {
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  will-change: transform;
+  border-radius: 8px;
+}
+
+.masonry-video:hover {
+  transform: scale(1.02);
+  cursor: pointer;
+}
+
+/* Modal styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease-in;
+}
+
+.modal-content {
+  position: relative;
+  max-width: 90vw;
+  max-height: 90vh;
+  background: transparent;
+}
+
+.modal-video {
+  width: 100%;
+  height: auto;
+  max-height: 90vh;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.close-button {
+  position: absolute;
+  top: -40px;
+  right: 0;
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+.close-button:hover {
+  background: white;
+  transform: scale(1.1);
+}
+
+/* Play button overlay for video thumbnails */
+.video-thumbnail {
+  position: relative;
+  cursor: pointer;
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 24px;
+  transition: all 0.3s ease;
+  opacity: 0.8;
+}
+
+.video-thumbnail:hover .play-button {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .modal-content {
+    max-width: 95vw;
+  }
+  
+  .play-button {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+  }
+} 

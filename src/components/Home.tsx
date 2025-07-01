@@ -36,10 +36,26 @@ const Home: FC = () => {
             </div>
           </section>
 
-          <nav className="flex flex-row gap-4">
-            <HomeButton title="CV" className='hover:shadow-lg hover:shadow-pink-200/50 transition-all duration-1000 hover:-translate-y-1' color="#FFC0CB" onClick={() => window.open(cv)} />
-            <HomeButton title="PORTFOLIO" className='hover:shadow-lg hover:shadow-green-200/50 transition-all duration-1000 hover:-translate-y-1' color="#709255" onClick={() => navigate('/portfolio')} />
-            <HomeButton title="CONTACT" className='hover:shadow-lg hover:shadow-blue-200/50 transition-all duration-1000 hover:-translate-y-1' color="#077187" onClick={() => navigate('/contact')} />
+          <nav className="flex flex-col sm:flex-row lg:flex-row gap-4">
+            <HomeButton 
+            
+              title="CV" 
+              className='hover:shadow-lg hover:shadow-pink-200/50 transition-all duration-1000 hover:-translate-y-1 w-full sm:w-auto text-center py-3 sm:py-2' 
+              color="#FFC0CB" 
+              onClick={() => window.open(cv)} 
+            />
+            <HomeButton 
+              title="PORTFOLIO" 
+              className='hover:shadow-lg hover:shadow-green-200/50 transition-all duration-1000 hover:-translate-y-1 w-full sm:w-auto text-center py-3 sm:py-2' 
+              color="#709255" 
+              onClick={() => navigate('/portfolio')} 
+            />
+            <HomeButton 
+              title="CONTACT" 
+              className='hover:shadow-lg hover:shadow-blue-200/50 transition-all duration-1000 hover:-translate-y-1 w-full sm:w-auto text-center py-3 sm:py-2' 
+              color="#077187" 
+              onClick={() => navigate('/contact')} 
+            />
           </nav>
         </div>
       </div>

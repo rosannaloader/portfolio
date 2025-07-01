@@ -11,7 +11,7 @@ function Contact() {
                 <a href="mailto:rosannaloader@gmail.com">
                 <div className="animated-circle p-6 rounded-lg shadow-md">
                     <h2 className="text-2xl font-bold mb-4 text-gray-800">Email</h2>
-                    <p className="text-gray-800">rosie.loader@renishaw.com</p>
+                    <p className="text-gray-800">rosannaloader@gmail.com</p>
                 </div>
                 </a>
                 <a href="https://www.linkedin.com/in/rosie-loader-42400a246/" target="_blank" rel="noopener noreferrer">
