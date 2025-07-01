@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 interface PortfolioCardProps {
     title: string;
     description: string;
@@ -22,13 +24,12 @@ function PortfolioCard({ title, description, imageUrl, link }: PortfolioCardProp
                     <h3 className="text-xl font-bold mb-2">{title}</h3>
                     <p className="text-sm mb-4 px-4">{description}</p>
                     {link && (
-                        <a 
-                            href={link}
-                            rel="noopener noreferrer"
+                        <Link 
+                            to={link}
                             className="inline-block bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition-colors duration-300"
                         >
                             View Project
-                        </a>
+                        </Link>
                     )}
                 </div>
             </div>

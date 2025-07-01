@@ -3,8 +3,12 @@ import '../index.css';
 import '../css/home.css';
 import profile from '../assets/profile.jpeg';
 import HomeButton from './HomeButton';
+import { useNavigate } from 'react-router-dom';
+import cv from '../assets/cv.pdf';
 
 const Home: FC = () => {
+  const navigate = useNavigate();
+  
   return (
     <div className="container mx-auto px-4 py-8">
       <div className="flex flex-col md:flex-row gap-8 items-center">
@@ -33,9 +37,9 @@ const Home: FC = () => {
           </section>
 
           <nav className="flex flex-row gap-4">
-            <HomeButton title="CV" className='hover:shadow-lg hover:shadow-pink-200/50 transition-all duration-1000 hover:-translate-y-1' color="#FFC0CB" onClick={() => window.open('/src/assets/cv.pdf')} />
-            <HomeButton title="PORTFOLIO" className='hover:shadow-lg hover:shadow-green-200/50 transition-all duration-1000 hover:-translate-y-1' color="#709255" onClick={() => window.location.href = '/portfolio'} />
-            <HomeButton title="CONTACT" className='hover:shadow-lg hover:shadow-blue-200/50 transition-all duration-1000 hover:-translate-y-1' color="#077187" onClick={() => window.location.href = '/contact'} />
+            <HomeButton title="CV" className='hover:shadow-lg hover:shadow-pink-200/50 transition-all duration-1000 hover:-translate-y-1' color="#FFC0CB" onClick={() => window.open(cv)} />
+            <HomeButton title="PORTFOLIO" className='hover:shadow-lg hover:shadow-green-200/50 transition-all duration-1000 hover:-translate-y-1' color="#709255" onClick={() => navigate('/portfolio')} />
+            <HomeButton title="CONTACT" className='hover:shadow-lg hover:shadow-blue-200/50 transition-all duration-1000 hover:-translate-y-1' color="#077187" onClick={() => navigate('/contact')} />
           </nav>
         </div>
       </div>
