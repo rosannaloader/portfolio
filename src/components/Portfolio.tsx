@@ -1,6 +1,8 @@
 import PortfolioCard from './PortfolioCard';
 import stuff from '../assets/project_card/stuff.jpeg';
 import nnt from '../assets/project_card/nt_black.png';
+import devono from '../assets/project_card/devono.png';
+import ecn from '../assets/project_card/ecn.png';
 
 // Sample portfolio data - you can replace this with your actual data
 const portfolioItems = [
@@ -11,17 +13,24 @@ const portfolioItems = [
         link: "/projects/stuff",
     },
     {
+        title: "Devono",
+        description: "Task of turning a blog post into a social media post the Devono.",
+        imageUrl: devono,
+        link: "/projects/devono"
+    },
+    {
+        title: "ECN Newsletter",
+        description: "Part of my current role includes being the communication officer for the early careers network. I publish a monthly newsletter to the cohort detailing the internal and external social events.",
+        imageUrl: ecn,
+        link: "/projects/ecn"
+    },
+    {
         title: "Nottingham New Theatre",
         description: "A collection of marketing collateral for the promotion of the Nottingham New Theatre; a student-run theatre company.",
         imageUrl: nnt,
         link: "/projects/nnt",
     },
-    {
-        title: "Coming soon!",
-        description: "",
-        imageUrl: "",
-        link: ""
-    }
+    
     // Add more portfolio items here when you have real content and images
 ];
 

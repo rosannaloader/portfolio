@@ -7,6 +7,8 @@ import Contact from './components/Contact'
 import Stuff from './components/projects/stuff/Stuff'
 import NNTLanding from './components/projects/nnt/Landing'
 import NNTMainSocialContent from './components/projects/nnt/MainSocialContent'
+import ECN from './components/projects/ecn/ECN'
+import Devono from './components/projects/devono/Devono'
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/projects/stuff" element={<Stuff />} />
         <Route path="/projects/nnt" element={<NNTLanding />} />
+        <Route path="/projects/devono" element={<Devono />} />
+        <Route path="/projects/ecn" element={<ECN />} />
         <Route path="/projects/nnt/main-social-content" element={<NNTMainSocialContent />} />
       </Routes>
     </Router>
